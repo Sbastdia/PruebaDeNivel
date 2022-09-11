@@ -1,4 +1,4 @@
-from bicicleta import Bicicleta
+from automoviles.bicicleta import Bicicleta
 
 class Motocicleta(Bicicleta):
     def __init__(self, color, ruedas, tipo, velocidad, cilindrada):

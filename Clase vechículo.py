@@ -1,3 +1,7 @@
+from automoviles.coche import Coche
+from automoviles.bicicleta import Bicicleta
+from automoviles.motocicleta import Motocicleta
+from automoviles.camioneta import Camioneta
 
 if __name__=="__main__":
 
@@ -12,6 +16,16 @@ if __name__=="__main__":
     vehiculos.append(bicicleta)
     vehiculos.append(motocicleta)
 
-    def catalogar(lista):
+    def catalogar(lista, rueda):
+        cantidad=0
+        list= []
         for i in lista:
+            if rueda== i.ruedas:
+                list.append(i)
+                cantidad+=1
+        print ("Se han encontrado {} vehiculos con {} ruedas:".format(cantidad,rueda))
+
+        for i in list:
             print(type(i).__name__, i)
+
+    catalogar(vehiculos, 0)

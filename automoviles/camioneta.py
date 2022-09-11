@@ -1,4 +1,4 @@
-from coche import Coche
+from automoviles.coche import Coche
 
 class Camioneta(Coche):
     def __init__(self, color, ruedas, velocidad, cilindrada, carga):
